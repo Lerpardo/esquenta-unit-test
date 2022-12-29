@@ -13,6 +13,9 @@
   Obs2.: Nenhum número flutuante ou negativo fará parte do array de números.
 */
 
-const sumTwoSmallestNumbers = () => {};
+const sumTwoSmallestNumbers = (array) => {
+  const sortedArray = array.sort((a, b) => a - b)
+  return sortedArray[0] + sortedArray[1]
+};
 
 module.exports = sumTwoSmallestNumbers;
