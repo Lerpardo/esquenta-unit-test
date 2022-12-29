@@ -12,6 +12,13 @@
   Obs.: Se a pessoa tiver menos de 18 anos ela não pode iniciar o processo.
 */
 
-const cnhProcess = () => {};
+const cnhProcess = (name,age) => {
+  const CURRENT_AGE = 2022 - age
+  if(CURRENT_AGE > 18) {
+    return `${name} tem ${CURRENT_AGE} anos de idade e pode iniciar o processo.`
+  } else {
+    return `${name} tem ${CURRENT_AGE} anos de idade e não pode iniciar o processo.`
+  }
+};
 
 module.exports = cnhProcess;
