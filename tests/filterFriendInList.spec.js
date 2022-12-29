@@ -17,7 +17,8 @@ const filterFriendInList = require('../src/filterFriendInList');
 
 describe('Implemente os casos de teste para a função `filterFriendInList`', () => {
   it('Verifica se ao receber uma lista de nomes, a função `filterFriendInList` retorna um array contedos os valores esperados', () => {
-    fail('Teste vazio!');
-    // ESCREVA SEUS TESTES ABAIXO:
+    expect(filterFriendInList(["Ryan", "Kieran", "Mark"])).toEqual(["Ryan", "Mark"])
+    expect(filterFriendInList(["Ryan", "Jimmy", "123", "4", "Cool Man"])).toEqual(["Ryan"])
+    expect(filterFriendInList(["Ryan", "Kieran", "Mark"])).toEqual(["Ryan", "Mark"])
   });
 });
