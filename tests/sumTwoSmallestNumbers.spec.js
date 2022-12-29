@@ -17,7 +17,8 @@ const sumTwoSmallestNumbers = require('../src/sumTwoSmallestNumbers');
 
 describe('Implemente os casos de teste para a função `sumTwoSmallestNumbers`', () => {
   it('Verifica se ao receber um array de números, a função `sumTwoSmallestNumbers` retorna a soma dos menores números desse array', () => {
-    fail('Teste vazio!');
     // ESCREVA SEUS TESTES ABAIXO:
+    expect(sumTwoSmallestNumbers([5, 8, 12, 19, 22])).toBe(13)
+    expect(sumTwoSmallestNumbers([23, 71, 33, 82, 1])).toBe(24)
   });
 });
